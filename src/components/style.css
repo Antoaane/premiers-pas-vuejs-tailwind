@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Lexend:100,200,300,regular,500,600,700,800,900);
+* {
+  font-family: "Lexend", sans-serif;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+body #app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+body #app .container {
+  width: 40vw;
+  margin-left: 15vw;
+  z-index: 5;
+}
+body #app .container button {
+  background-color: black;
+  padding: 1em 2em;
+  margin-top: 20px;
+  color: white;
+  border: 2px solid black;
+  border-radius: 5em;
+  transition: 250ms ease;
+}
+body #app .container button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+body #app .container .profile-select {
+  display: flex;
+  flex-wrap: wrap;
+}
+body #app .container .profile-select p {
+  margin: 10px 10px 10px 0;
+}
+body #app .container .profile-select select {
+  background-color: rgb(255, 255, 255);
+  padding: 0.8em 1.6em;
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+  border-radius: 5em;
+  transition: 250ms ease;
+}
+body #app img {
+  position: absolute;
+  right: 0;
+}
+body #app .front-arrow {
+  width: 20vw;
+}
+body #app .picture {
+  width: 30vw;
+  border-radius: 320px;
+  right: 10vw;
+}
+body #app .back-arrow {
+  width: 50vw;
+}
+
+@media screen and (max-width: 500px) {
+  body #app {
+    align-items: baseline;
+    justify-content: center;
+  }
+  body #app .container {
+    width: 80vw;
+    margin-left: 0;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body #app .container .profile-select {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body #app .container .profile-select p {
+    margin: 10px 10px 10px 0;
+  }
+  body #app img {
+    position: absolute;
+    right: auto;
+    bottom: 0;
+  }
+  body #app .front-arrow {
+    width: 40vw;
+    transform: rotate(90deg);
+    bottom: -100px;
+  }
+  body #app .picture {
+    width: 60vw;
+    border-radius: 320px;
+    right: auto;
+    bottom: 100px;
+  }
+  body #app .back-arrow {
+    width: 100vw;
+    transform: rotate(90deg);
+    bottom: -100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
