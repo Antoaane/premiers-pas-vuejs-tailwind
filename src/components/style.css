@@ -101,6 +101,7 @@ body #app .back-arrow {
   body #app .picture {
     width: 60vw;
     right: auto;
+    border-radius: 320px;
     bottom: 100px;
   }
   body #app .back-arrow {
