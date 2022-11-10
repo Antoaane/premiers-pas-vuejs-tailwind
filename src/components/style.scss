@@ -74,14 +74,22 @@ body {
 
         .front-arrow {
             width: 20vw;
+
+            animation: floating-front 5s 500ms ease-in-out infinite;
         }
         .picture {
             width: 30vw;
             border-radius: 320px;
             right: 10vw;
+
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+
+            animation: floating-front 5s ease-in-out infinite;
         }
         .back-arrow {
             width: 50vw;
+
+            animation: floating-back 5s 250ms ease-in-out infinite;
         }
     }
 }
@@ -104,6 +112,10 @@ body {
                 flex-direction: column;
                 align-items: center;
     
+                h1, p {
+                    text-align: center;
+                }
+
                 .profile-select {
                     display: flex;
                     flex-wrap: wrap;
@@ -125,20 +137,85 @@ body {
                 width: 40vw;
                 transform: rotate(90deg);
                 bottom: -100px;
+
+                animation: floating-front-r 5s 500ms ease-in-out infinite;
             }
             .picture {
                 width: 60vw;
                 right: auto;
                 bottom: 100px;
+
+                animation: floating-pic-r 5s ease-in-out infinite;
             }
             .back-arrow {
                 width: 100vw;
                 transform: rotate(90deg);
                 bottom: -100px;
+
+                animation: floating-back-r 5s 250ms ease-in-out infinite;
             }
         }
     }
 }
 
+@keyframes floating-front {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(15px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes floating-back {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes floating-front-r {
+    0% {
+        transform: rotate(90deg) translateX(0px);
+    }
+    50% {
+        transform: rotate(90deg) translateX(15px);
+    }
+    100% {
+        transform: rotate(90deg) translateX(0px);
+    }
+}
+
+@keyframes floating-pic-r {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes floating-back-r {
+    0% {
+        transform: rotate(90deg) translateX(0px);
+    }
+    50% {
+        transform: rotate(90deg) translateX(50px);
+    }
+    100% {
+        transform: rotate(90deg) translateX(0px);
+    }
+}
 
 
