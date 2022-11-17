@@ -1,6 +1,6 @@
 <template>
-    <img class="picture" :src="img" v-if="init == true" alt="">
-    <img class="picture" src="../assets/hero-image.jpg" v-else alt="">
+    <img :src="img" v-if="init == true" alt="">
+    <img src="../assets/hero-image.jpg" v-else alt="">
 </template>
 
 <script>
